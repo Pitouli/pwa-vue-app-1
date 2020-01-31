@@ -2,6 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
+// Import Store
+import store from './store';
+
 Vue.config.productionTip = false;
 
 if ('serviceWorker' in navigator) {
@@ -16,5 +19,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  store
 });

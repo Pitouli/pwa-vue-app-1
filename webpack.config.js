@@ -113,10 +113,12 @@ module.exports = (env, argv) => ({
 
   devServer: {
     compress: true,
-    host: 'localhost',
-    https: true,
+    host: '0.0.0.0',
+    // https: false,
     open: true,
-    overlay: true,
-    port: 9000
+    // overlay: true,
+    port: 3388,
+    disableHostCheck: true,
+    historyApiFallback: true,
   }
 });
